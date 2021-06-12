@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="contents">
+  <div class="decor">
+    <form class="quote-form"  method="post">
+      <h3 class="black">{{form.name.label}}</h3>
+        <p class="black">{{form.name()}}</p>
+      <h3 class="black">{{form.email.label}}</h3>
+        <p class="black">{{form.email()}}</p>
+      <h3 class="black">{{form.number.label}}</h3>
+        <p class="black">{{form.number()}}</p>
+      <h3 class="black">{{form.description.label}}</h3>
+        <p class="black">{{form.description()}}</p>
+      <h3 class="black">{{form.submit()}}</h3>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+  {% if title %}
+    <title>Bandits - {{title}}</title>
+  {% else %}
+<title>Bandits</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+</style>
+  {% endif %}
+</head>
+<body>
+  <div class="navbar">
+     <a id="button" class="navbar" href="{{ url_for('index') }}">Home</a>
+     |
+     <a id="button" class="navbar" href="{{ url_for('about')}}">About Us</a>
+     |
+     <a id="button" class="navbar" href="{{ url_for('contact')}}">Contact Us</a>
+   </div>
+  {% block content %}{% endblock %}
+  <div class="contents">
+    <h3>Copyright @2019 Bandit LLC. All rights reserved.</h3>
+    <h3>info@bandits.com</h3>
+    <h3>+1 (503) 123-4567</h3>
+  </div>
+</body>
+</html>
