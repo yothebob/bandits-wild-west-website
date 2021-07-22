@@ -41,7 +41,7 @@ div.contents{
   color: #646F58;
 }
 div.cover-image{
-  background: url('/static/christmas-tree-farm.jpg') no-repeat bottom left;
+  background: url('/static/deer.jpg') no-repeat bottom left;
   background-size: cover;
   width: 100%;
   height:650px;
