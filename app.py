@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, url_for
 import random
 from wtforms import Form,IntegerField ,StringField,TextAreaField, validators, SubmitField
 
+#a web app
+
 app = Flask(__name__)
 app.config['SECRET KEY'] = random.randrange(1000000,9999999)
 
